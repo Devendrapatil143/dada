@@ -1,0 +1,36 @@
+import React from "react";
+import { TextInput,View,Button,StyleSheet } from "react-native";
+import Input from "./src/component/Input";
+
+class App extends React.Component {
+  render() {
+
+    return (
+      
+      
+      <View style={{flex:1,justifyContent:"center", marginBottom:0, backgroundColor:"pink"}}>
+       <Input />
+       <Button title="click me"  style={styles.button}
+       color="black" />
+          
+       
+      <View style={{ backgroundColor: "orange", flex: 0.3 }} />
+        <View style={{ backgroundColor: "white", flex: 0.3}} />
+           <View style={{ backgroundColor: "green", flex: 0.3}} />
+    
+       
+      </View>
+    );
+  };
+}
+
+
+const styles=StyleSheet.create({
+  button:{
+backgroundColor:"black",
+borderRadius:30,
+borderWidth:2,
+  }
+
+ })
+export default App;
